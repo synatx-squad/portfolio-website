@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Web Developer & Stock Trader</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(90deg, #16222A, #3A6073);
+            color: white;
+        }
+    
+        /* Navbar Container */
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px 40px;
+            height: 80px;
+            background-image: linear-gradient(90deg, #10171e, #314b63);
+            color: #fff;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 150%, 0 calc(100% - 60px));
+        }
+    
+        /* Logo Section */
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .logo img {
+            height: 150px;
+        }
+    
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    
+        .nav-links li a:hover {
+            color: #ff4757;
+        }
+    
+        
+        /* Section Styles */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+    
+        section h2 {
+            margin-bottom: 20px;
+        }
+    
+        .skills, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    
+        .card {
+            width: 150px;
+            
+            background: #314b63;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 100px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    
+        .card h3 {
+            color:red;
+            font-size: 20px;
+        }
+    
+        .footer {
+            padding: 20px;
+            background: #10171e;
+            text-align: center;
+            height: 30vh;
+        }
+    
+        .footer a {
+            color: #ff4757;
+            text-decoration: none;
+        }
+    
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    
+        
+        img{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+
+
+
+     
+
+     
+
+    .hero-section {
+      height: 65vh;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      text-align: start;
+      padding: 20px;
+      margin-left: 50px;
+    }
+    
+      
+      
+      
+      
+    
+
+    .name {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 5px; /* Reduced gap */
+      
+      
+    }
+
+    .description {
+      font-size: 1.5rem;
+      margin-top: 1px;
+      margin-bottom: 12px; /* Reduced gap */
+      
+      
+    }
+
+    .highlight {
+      display: inline-block;
+      border-bottom: 2px solid #00ff00;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 15px; /* Reduced gap between buttons */
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px; /* Reduced gap */
+    }
+
+    .btn-custom {
+      background-color: #00ff00;
+      color: #000;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);
+      transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #009900;
+      box-shadow: 0 6px 15px rgba(0, 255, 0, 0.6);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .name {
+        font-size: 3rem;
+      }
+
+      .description {
+        font-size: 1.2rem;
+      }
+
+      .btn-custom {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+      }
+    }
+
+
+   
+
+
+     /*for future*/
+    .about-section{
+      text-align: center;
+      height: 50vh;
+     
+    }
+
+
+    
+        
+    </style>
+    
+</head>
+<body>  
+    <!-- Navbar -->
+    <nav class="navbar">
+    <ul class="nav-links left-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#resume">Recent works</a></li>
+    </ul>
+    <div class="logo">
+        <img src="transportloo-removebg-preview.png" alt="Mr.v Logo">
+    </div>
+    <ul class="nav-links right-links">
+        <li><a href="#contact">Skill</a></li>
+     
+        </div>
+
+        <li><a href="#portfolio">Contact me</a></li>
+    </ul>
+    </nav>
+
+  
+    <!--hero section -->
+
+    <div class="hero-section">
+        
+        <h1 class="name">Mohan Verma</h1>
+        <p class="description">I'm a <span id="animated-text" class="highlight"></span></p>
+    
+        <!-- Buttons -->
+        <div class="button-container">
+          <button class="btn-custom">Download CV</button>
+          <button class="btn-custom">More About Me</button>
+        </div>
+    
+      </div>
+
+
+
+      <!-- for future-->
+      <div class="about-section">
+        <h2>about</h2>
+      </div>
+
+
+
+
+   
+
+   
+   
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="card">
+                <h3>Trading</h3>
+                <p>Scalping, intraday,swing</p>
+            </div>
+            <div class="card">
+                <h3>APIs Integration</h3>
+                <p>Alpha Vantage, Unsplash</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Web Development Projects</h2>
+        <div class="portfolio">
+            <div class="card">
+              <img src="transportlogo-removebg-preview.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <h3>Online Bookstore</h3>
+                <p>An e-commerce platform to buy and sell books with a modern, user-friendly interface.</p>
+            </div>
+            <div class="card">
+              <img src="transportlogo-removebg-preview.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <h3>Weather App</h3>
+                <p>A real-time weather website using APIs to fetch and display weather data in an interactive way.</p>
+            </div>
+            <div class="card">
+              <img src="transportlogo-removebg-preview.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <h3>paper trading website</h3>
+                <p>it is an virtual trading platform where an user can backtest their strategy without lossing real money </p>
+            </div>
+            <div class="card">
+              <img src="transportlogo-removebg-preview.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <h3>trucking logistic website</h3>
+                <p>it is an website for trucking logistic company where user can track their shipment and</p>
+            </div>
+            <div class="card">
+                <img src="transportlogo-removebg-preview.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <h3>real estate  website</h3>
+                <p>it is an website for real estate company where user can search for property </p>
+                 
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+      
+    <script>
+    // Dropdown Toggle Functionality
+    document.querySelector('.nav-links a[href="#contact"]').addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default behavior
+        const contactOptions = document.getElementById("contactOptions");
+        
+        // Toggle the display of the contact options
+        if (contactOptions.style.display === "block") {
+            contactOptions.style.display = "none";
+        } else {
+            contactOptions.style.display = "block";
+        }
+    });
+</script>
+
+
+
+<script>
+    const roles = [" web Developer", " Stock Trader", "stock Investor"];
+    let index = 0;
+    let textIndex = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function typeEffect() {
+      const animatedText = document.getElementById("animated-text");
+      currentWord = roles[index];
+
+      if (!isDeleting && textIndex < currentWord.length) {
+        animatedText.textContent += currentWord.charAt(textIndex);
+        textIndex++;
+      } else if (isDeleting && textIndex > 0) {
+        animatedText.textContent = currentWord.substring(0, textIndex - 1);
+        textIndex--;
+      }
+
+      if (textIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 2000);
+      } else if (textIndex === 0 && isDeleting) {
+        isDeleting = false;
+        index = (index + 1) % roles.length;
+        setTimeout(typeEffect, 500);
+      } else {
+        setTimeout(typeEffect, 100);
+      }
+    }
+
+    typeEffect();
+  </script>
+</body>
+
+</body>
+</html>
